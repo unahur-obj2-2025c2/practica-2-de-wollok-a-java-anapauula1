@@ -13,6 +13,5 @@ public class DronSeguridad extends Dron{
     @Override
     public Boolean esAvazandoSegunTipo() {
         return this.getProcesamiento() > 50;
-        // TENGO QUE PONER EL THIS
     }
 }

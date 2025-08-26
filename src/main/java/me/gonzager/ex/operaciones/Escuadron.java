@@ -12,7 +12,6 @@ public class Escuadron {
         this.droneList = droneList;
     }
     /* -------- METODOS ------------- */
-    // si el escuadron puede operar en mas de una zona
     public Boolean puedeOperar(Zona zona){
         return this.alMenosUnAvanzado() && this.eficienciaOperativa() * 1.5 > zona.getTamaño();
     }
@@ -24,5 +23,4 @@ public class Escuadron {
     public Integer eficienciaOperativa(){
         return droneList.stream().mapToInt(droneList -> droneList.eficienciaOperativa()).sum();
     }
-    // mapToInt = pasa los datos a numericos !!!!
 }

@@ -12,11 +12,9 @@ public class DronComercial extends Dron{
         super(autonomia, procesamiento, mision);
     }
 
-    // SUBESCRIBO EL METODO ABSTRACTO DE CLASE DRON
     @Override
     public Boolean esAvazandoSegunTipo() {
         return Boolean.FALSE;
-        // LE PODEMOS PONER DE POR SI EL VALOR DE UNA
     }
 
     
